@@ -10,6 +10,7 @@ import {
   ChevronDown,
   Phone
 } from 'lucide-react';
+import Link from 'next/link';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -68,11 +69,11 @@ const Header = () => {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <a href="/" className="flex items-center">
+              <Link href="/" className="flex items-center">
                 <span className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">
                   GLAM WIGS
                 </span>
-              </a>
+              </Link>
             </div>
 
             {/* Desktop Navigation */}
